@@ -1,1 +1,41 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>X19</title><link rel="stylesheet" href="style.css"></head><body><h1>X19 Game Starter</h1><script src="game.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#7b1026" />
+  <title>X19 Girl：Run With Me</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+  <main id="app">
+    <section id="startScreen" class="screen active">
+      <div class="noise"></div>
+      <div class="brand">X19</div>
+      <h1>Run With Me</h1>
+      <p>安靜，也是一種力量。</p>
+      <button id="startBtn">START</button>
+      <small>手機點擊螢幕跳躍｜電腦按空白鍵</small>
+    </section>
+
+    <section id="gameScreen" class="screen">
+      <div class="hud">
+        <span>SCORE <b id="score">0</b></span>
+        <span>BEST <b id="best">0</b></span>
+      </div>
+      <canvas id="gameCanvas"></canvas>
+      <div id="tapHint">TAP TO JUMP</div>
+    </section>
+
+    <section id="gameOverScreen" class="screen">
+      <div class="brand small">X19</div>
+      <h2>GAME OVER</h2>
+      <p>妳不是失敗，只是下一次會跳得更高。</p>
+      <div class="finalScore">SCORE：<span id="finalScore">0</span></div>
+      <button id="restartBtn">RESTART</button>
+    </section>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>

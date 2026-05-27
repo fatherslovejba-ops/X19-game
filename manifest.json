@@ -1,1 +1,10 @@
-{"name":"X19 Game","short_name":"X19","display":"fullscreen"}
+{
+  "name": "X19 Girl Run With Me",
+  "short_name": "X19 Game",
+  "start_url": "./index.html",
+  "display": "fullscreen",
+  "background_color": "#11080a",
+  "theme_color": "#7b1026",
+  "orientation": "portrait",
+  "icons": []
+}
